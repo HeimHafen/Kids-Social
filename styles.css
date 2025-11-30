@@ -285,6 +285,10 @@ body {
   background: rgba(15, 23, 42, 0.9);
 }
 
+.ks-phone-footer {
+  margin-top: 2px;
+}
+
 /* Sections */
 
 .ks-section {
