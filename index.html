@@ -2,140 +2,138 @@
 <html lang="de">
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, viewport-fit=cover"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Kids-Social – Sicherer Social-Space für Kinder</title>
-  <meta
-    name="description"
-    content="Kids-Social: Eine sichere, kindgerechte Social-App als Alternative zu Instagram – für Kinder ab ca. 9–13 Jahren. Fokus: Schutz, echte Freunde, positive Inhalte."
-  />
+  <title>Kids-Social – früher Konzeptentwurf</title>
+  <meta name="description"
+        content="Kids-Social: Ein geschützter Social-Space nur für Kinder – ohne Fremde, ohne Werbung. Fokus: Schutz, echte Freunde, positive Inhalte." />
 
-  <!-- einfache Basis-Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Später können wir eine eigene CSS-Datei einbinden, im Moment ist alles bewusst schlicht -->
+  <style>
+    body {
+      font-family: -apple-system, system-ui, -system-ui, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 16px;
+      line-height: 1.6;
+      background: #ffffff;
+      color: #111111;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.6rem;
+    }
+
+    p {
+      margin: 0.6rem 0;
+    }
+
+    ul {
+      margin: 0.4rem 0 0.8rem 1.2rem;
+    }
+
+    .badge {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin: 1rem 0;
+      padding: 0.6rem 1.1rem;
+      border-radius: 999px;
+      border: 1px solid #e0e0e0;
+      text-decoration: none;
+      font-size: 1rem;
+      background: #f3f4ff;
+      color: #222;
+    }
+
+    .cta-button:hover {
+      background: #e4e6ff;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-  <div class="page">
-    <!-- HERO / HEADER -->
-    <header class="hero">
-      <p class="hero-label">Frühe Konzeptversion</p>
+  <main>
+    <p class="badge">Frühe Konzeptversion</p>
 
-      <h1 class="hero-title">Kids-Social</h1>
+    <h1>Kids-Social</h1>
 
-      <p class="hero-subtitle">
-        Ein geschützter Social-Space nur für Kids – ohne Fremde, ohne Werbung.
-      </p>
+    <p>
+      Ein geschützter Social-Space nur für Kids – ohne Fremde, ohne Werbung.
+    </p>
 
-      <p class="hero-tagline">
-        Für Kinder ab ca. 9–13 Jahren. Fokus: Schutz, echte Freunde, positive Inhalte.
-      </p>
+    <p>
+      Für Kinder ab ca. 9–13&nbsp;Jahren. Fokus: Schutz, echte Freunde, positive Inhalte.
+    </p>
 
-      <a
-        class="hero-cta"
-        href="mailto:deine.mailadresse@example.com?subject=Kids-Social%20Interessent"
-        >Sag hallo 👋</a
-      >
+    <p>
+      <a class="cta-button" href="mailto:info@example.com?subject=Kids-Social%20Interesse">
+        Sag hallo 👋
+      </a>
+    </p>
 
-      <p class="hero-small">
-        Schreib kurz, wer du bist (Eltern / Pädagog*in / Partner) – wir melden uns,
-        sobald es erste Tests gibt.
-      </p>
-    </header>
+    <p>
+      Schreib kurz, wer du bist (Eltern / Pädagog*in / Partner) – wir melden uns, sobald es erste Tests gibt.
+    </p>
 
-    <!-- HAUPTBEREICH -->
-    <main class="main">
-      <!-- Abschnitt: Warum Kids-Social? -->
-      <section class="card" id="warum">
-        <h2>Warum Kids-Social?</h2>
-        <p>
-          Klassische Social-Apps sind für Kinder nicht gemacht: Fremde Kontakte,
-          unklare Inhalte, Werbung und offene Chats. Kids-Social dreht das um.
-        </p>
-        <ul>
-          <li>Nur echte Freunde – Kontakte werden von Eltern freigegeben.</li>
-          <li>Keine Werbung, keine zufälligen „Explore“-Inhalte.</li>
-          <li>Klare Regeln &amp; positive Kultur statt Hate und Druck.</li>
-        </ul>
-        <p class="card-highlight">
-          Ziel: Ein Ort, an dem Kinder Spaß haben, kreativ sein und mit ihren
-          Lieblingsmenschen verbunden bleiben – ohne Social-Media-Stress.
-        </p>
-      </section>
+    <h2>Warum Kids-Social?</h2>
 
-      <!-- Abschnitt: Wie soll es funktionieren? -->
-      <section class="card" id="funktion">
-        <h2>Wie soll es funktionieren?</h2>
-        <ul>
-          <li>
-            ✉️ <strong>Eltern-Account:</strong> Eltern erstellen den Kinder-Account
-            und verwalten Kontakte.
-          </li>
-          <li>
-            📸 <strong>Kids-Feed:</strong> Teilen von Fotos, Zeichnungen, Sprachnachrichten
-            und kleinen Updates.
-          </li>
-          <li>
-            💬 <strong>Chats nur mit freigegebenen Kontakten:</strong> z. B. Familie,
-            beste Freunde oder Klassenfreunde.
-          </li>
-          <li>
-            🛡️ <strong>Schutz-Ebenen:</strong> deutliche Grenzen, Meldesystem,
-            Pausen-Modus, klare Community-Regeln.
-          </li>
-          <li>
-            🌈 <strong>Positive Inhalte:</strong> Fokus auf Kreativität, Hobbys,
-            Erfolge und schöne Momente.
-          </li>
-        </ul>
-      </section>
+    <p>
+      Klassische Social-Apps sind für Kinder nicht gemacht: Fremde Kontakte, unklare Inhalte,
+      Werbung und offene Chats. Kids-Social dreht das um.
+    </p>
 
-      <!-- Abschnitt: Für wen ist Kids-Social? -->
-      <section class="card" id="fuer-wen">
-        <h2>Für wen ist Kids-Social?</h2>
-        <p>Kids-Social richtet sich an:</p>
-        <ul>
-          <li>Familien mit Kindern ab ca. 9–13 Jahren,</li>
-          <li>Schulen &amp; pädagogische Projekte,</li>
-          <li>Organisationen, die sichere digitale Räume für Kinder wollen.</li>
-        </ul>
-        <p class="card-highlight">
-          Du überlegst, ab wann dein Kind „ins Internet“ darf? Kids-Social soll
-          der erste, sichere Schritt sein – statt direkter Einstieg in Instagram
-          &amp; Co.
-        </p>
-      </section>
+    <ul>
+      <li>Nur echte Freunde – Kontakte werden von Eltern freigegeben.</li>
+      <li>Keine Werbung, keine zufälligen „Explore“-Inhalte.</li>
+      <li>Klare Regeln &amp; positive Kultur statt Hate und Druck.</li>
+    </ul>
 
-      <!-- Abschnitt: Status & Kontakt -->
-      <section class="card" id="status">
-        <h2>Status &amp; Mitmachen</h2>
-        <p>
-          Kids-Social ist aktuell eine frühe Konzept- und Prototyp-Phase. Bevor Kinder
-          die App nutzen können, werden Technik, Datenschutz und Sicherheit gründlich
-          geplant und getestet.
-        </p>
-        <p>
-          Wenn du als Elternteil, Pädagog*in, Schulprojekt oder Partner Interesse
-          hast, melde dich gern:
-        </p>
-        <p>
-          <a
-            class="hero-cta"
-            href="mailto:deine.mailadresse@example.com?subject=Kids-Social%20Feedback"
-            >Ich habe Interesse ✉️</a
-          >
-        </p>
-        <p class="card-highlight">
-          Je mehr echtes Feedback aus Familien &amp; Schulen, desto besser können wir
-          Kids-Social bauen.
-        </p>
-      </section>
-    </main>
+    <p>
+      Ziel: Ein Ort, an dem Kinder Spaß haben, kreativ sein und mit ihren Lieblingsmenschen
+      verbunden bleiben – ohne Social-Media-Stress.
+    </p>
 
-    <footer class="footer-note">
-      Kids-Social – frühe Konzeptversion (Prototyp)
+    <h2>Wie soll es funktionieren?</h2>
+
+    <ul>
+      <li>📩 Eltern-Account: Eltern erstellen den Kinder-Account und verwalten Kontakte.</li>
+      <li>📸 Kids-Feed: Teilen von Fotos, Zeichnungen, Texten – nur mit freigegebenen Freunden.</li>
+      <li>💬 Sichere Chats: 1:1 oder kleine Gruppen, komplett geschützt.</li>
+      <li>🛡️ Schutz-Ebene: klare Grenzen, Meldesystem, feste Sicherheitsregeln.</li>
+    </ul>
+
+    <h2>Für wen ist Kids-Social?</h2>
+
+    <ul>
+      <li>Eltern, die eine sichere Alternative zu Instagram &amp; Co. suchen.</li>
+      <li>Kinder, die Spaß an Fotos, Nachrichten &amp; Kreativität haben – aber ohne Fremde.</li>
+      <li>Schulen, Horte &amp; pädagogische Projekte, die einen geschützten digitalen Raum wollen.</li>
+    </ul>
+
+    <footer>
+      Kids-Social – frühe Konzeptversion (Prototyp)<br />
+      Diese Seite dient nur als erster Info- und Test-Screen.
     </footer>
-  </div>
+  </main>
 </body>
 </html>
