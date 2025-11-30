@@ -110,11 +110,12 @@ body {
   margin-bottom: 12px;
 }
 
-/* Buttons */
+/* Buttons (für Button-Komponente) */
 
 .ks-btn {
   border: none;
   cursor: pointer;
+  font: inherit;
 }
 
 .ks-btn-primary {
@@ -272,4 +273,89 @@ body {
 
 .ks-phone-footer {
   margin-top: 2px;
+}
+
+/* Auth Screen */
+
+.ks-auth-root {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at top, #1e293b 0, #020617 55%);
+  padding: 24px 16px;
+}
+
+.ks-auth-card {
+  max-width: 420px;
+  width: 100%;
+  padding: 24px 22px 26px;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  box-shadow: 0 22px 45px rgba(15, 23, 42, 0.8);
+}
+
+.ks-auth-title {
+  margin: 0 0 8px;
+  font-size: 1.4rem;
+}
+
+.ks-auth-sub {
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+  color: var(--ks-text-muted);
+}
+
+.ks-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.ks-auth-label {
+  font-size: 0.85rem;
+  color: var(--ks-text-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ks-auth-input {
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  padding: 8px 14px;
+  background: rgba(15, 23, 42, 0.9);
+  color: var(--ks-text);
+  font-size: 0.9rem;
+}
+
+.ks-auth-input:focus {
+  outline: none;
+  border-color: var(--ks-accent);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.2);
+}
+
+.ks-auth-hint {
+  font-size: 0.8rem;
+  color: var(--ks-text-muted);
+}
+
+.ks-auth-error {
+  font-size: 0.8rem;
+  color: #fecaca;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .ks-app-root {
+    padding-inline: 12px;
+  }
+
+  .ks-toggle-bar {
+    padding-inline: 12px;
+    flex-wrap: wrap;
+  }
 }
