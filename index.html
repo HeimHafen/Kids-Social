@@ -1,12 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Kids-Social App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Kids-Social – Sicherer Social Space für Kinder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Kids-Social ist ein geschützter Social Space für Kinder von ca. 9–13 Jahren. Ohne Fremde, ohne Werbung, ohne Algorithmus-Stress."
+  />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="ks-header">
+    <div class="ks-logo">Kids<span>Social</span></div>
+    <nav class="ks-nav">
+      <a href="#why">Warum?</a>
+      <a href="#how">So funktioniert’s</a>
+      <a href="#who">Für wen?</a>
+      <a href="#stay-in-touch" class="ks-nav-cta">Mitmachen</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="ks-hero">
+      <div class="ks-hero-text">
+        <p class="ks-label">Frühe Konzeptversion</p>
+        <h1>Social Media – aber kindgerecht.</h1>
+        <p class="ks-hero-sub">
+          Kids-Social ist ein geschützter Social Space für Kinder von ca. 9–13 Jahren.
+          Ohne Fremde, ohne Werbung, ohne Algorithmus-Stress.
+        </p>
+        <div class="ks-hero-actions">
+          <a href="#stay-in-touch" class="ks-btn-primary">Mach mit beim frühen Test</a>
+          <p class="ks-hero-note">Eltern, Pädagog*innen &amp; Schulen willkommen.</p>
+        </div>
+      </div>
+
+      <div class="ks-hero-phone">
+        <div class="ks-phone-frame">
+          <div class="ks-phone-top">
+            <span class="ks-pill">Kids-Feed</span>
+          </div>
+          <div class="ks-phone-content">
+            <div class="ks-post">
+              <div class="ks-post-header">
+                <div class="ks-avatar ks-avatar-1">L</div>
+                <div>
+                  <div class="ks-post-name">Lena</div>
+                  <div class="ks-post-meta">heute · nur Freunde</div>
+                </div>
+              </div>
+              <p class="ks-post-text">Schaut mal, meine neue Zeichnung 🐉</p>
+              <div class="ks-post-badges">
+                <span>🎨 kreativ</span>
+                <span>💬 3</span>
+              </div>
+            </div>
+
+            <div class="ks-post">
+              <div class="ks-post-header">
+                <div class="ks-avatar ks-avatar-2">M</div>
+                <div>
+                  <div class="ks-post-name">Mika</div>
+                  <div class="ks-post-meta">vor 10 Min · Klasse 5b</div>
+                </div>
+              </div>
+              <p class="ks-post-text">Wer kommt heute zum Skateplatz? 🛹</p>
+              <div class="ks-post-reactions">
+                <span>😄</span><span>🔥</span><span>👍</span>
+              </div>
+            </div>
+
+            <div class="ks-phone-footer">
+              <span class="ks-pill-alt">Nur echte Freund*innen · Keine Fremden</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warum -->
+    <section id="why" class="ks-section ks-section-alt">
+      <div class="ks-section-inner">
+        <h2>Warum Kids-Social?</h2>
+        <p>
+          Klassische Social-Apps sind für Kinder nicht gemacht: Fremde Kontakte, unklare
+          Inhalte, Werbung und offene Chats. Kids-Social dreht das um und sorgt dafür, dass
+          Kinder in Ruhe sie selbst sein können.
+        </p>
+        <div class="ks-grid">
+          <div class="ks-card">
+            <h3>Nur echte Freund*innen</h3>
+            <p>Kontakte werden von Eltern freigegeben. Keine Fremden, keine DMs von Unbekannten.</p>
+          </div>
+          <div class="ks-card">
+            <h3>Keine Werbung</h3>
+            <p>Kein Tracking, keine Ads, kein Algorithmus, der Kinder in Endlosschleifen zieht.</p>
+          </div>
+          <div class="ks-card">
+            <h3>Positive Kultur</h3>
+            <p>Klare Regeln, Meldesystem und Fokus auf Respekt, Kreativität und Spaß.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wie -->
+    <section id="how" class="ks-section">
+      <div class="ks-section-inner">
+        <h2>So soll Kids-Social funktionieren</h2>
+        <div class="ks-grid ks-grid-2">
+          <div class="ks-card">
+            <h3>Eltern-Account</h3>
+            <p>
+              Eltern erstellen das Kinder-Profil, verwalten Kontakte und können auf Wunsch
+              Benachrichtigungen zu Auffälligkeiten erhalten.
+            </p>
+          </div>
+          <div class="ks-card">
+            <h3>Kids-Feed</h3>
+            <p>
+              Kinder teilen Fotos, Zeichnungen, Texte oder Sprachnachrichten – sichtbar nur
+              für freigegebene Freund*innen und Gruppen.
+            </p>
+          </div>
+          <div class="ks-card">
+            <h3>Sichere Chats</h3>
+            <p>
+              1:1 oder kleine Gruppen wie „Klasse 5b“ oder „Hort“. Kein öffentlicher Chat, kein Spam.
+            </p>
+          </div>
+          <div class="ks-card">
+            <h3>Schutz-Ebene</h3>
+            <p>
+              Klare Grenzen, Meldesystem, feste Sicherheitsregeln. App-Design ohne Like-Druck
+              oder Follower-Jagd.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Für wen -->
+    <section id="who" class="ks-section ks-section-alt">
+      <div class="ks-section-inner">
+        <h2>Für wen ist Kids-Social?</h2>
+        <div class="ks-grid ks-grid-3">
+          <div class="ks-card">
+            <h3>Eltern</h3>
+            <p>
+              die eine sichere Alternative zu Instagram &amp; Co. für ihre Kinder suchen –
+              mit mehr Kontrolle und weniger Stress.
+            </p>
+          </div>
+          <div class="ks-card">
+            <h3>Kinder</h3>
+            <p>
+              die chatten, teilen und kreativ sein wollen – aber nur mit ihren echten
+              Lieblingsmenschen.
+            </p>
+          </div>
+          <div class="ks-card">
+            <h3>Schulen &amp; Projekte</h3>
+            <p>
+              die einen geschützten digitalen Raum für Klassen, Horte oder AGs brauchen.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stay in touch -->
+    <section id="stay-in-touch" class="ks-section">
+      <div class="ks-section-inner ks-section-center">
+        <h2>Aktuell: frühe Konzeptphase – mach mit</h2>
+        <p>
+          Kids-Social ist aktuell ein früher Prototyp. Wir sprechen mit Eltern, Kindern und
+          Schulen, um die ersten Tests zu planen.
+        </p>
+        <p>
+          Schreib uns kurz, wer du bist – wir melden uns, sobald es erste Tests gibt.
+        </p>
+
+        <a
+          href="mailto:dein-mail@beispiel.de?subject=Kids-Social%20-%20Ich%20m%C3%B6chte%20mitmachen"
+          class="ks-btn-primary ks-btn-large"
+        >
+          Sag hallo per E-Mail
+        </a>
+        <p class="ks-hero-note">
+          Bitte dazuschreiben, ob du Elternteil, Pädagog*in, Schule oder Partner bist.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ks-footer">
+    <div class="ks-footer-inner">
+      <span>Kids-Social – frühe Konzeptversion (Prototyp)</span>
+      <span class="ks-footer-dot">•</span>
+      <span>Stand: 2025</span>
+    </div>
+  </footer>
+</body>
 </html>
