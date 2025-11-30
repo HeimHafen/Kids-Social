@@ -1,0 +1,65 @@
+:root {
+  --bg: #ffe7c9;
+  --card-bg: #fff6ea;
+  --accent: #ff8a3d;
+  --text: #3b2714;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.ks-header {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffb347, #ff8a3d);
+  color: #fff;
+}
+
+.ks-main {
+  padding: 1.5rem 1rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ks-card {
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  margin-top: 0.75rem;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.ks-message {
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+.ks-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
