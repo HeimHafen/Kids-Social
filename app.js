@@ -1,3 +1,4 @@
+// Smooth Scroll für interne Links (#why, #how, #who, #stay-in-touch)
 document.addEventListener("DOMContentLoaded", () => {
   const links = document.querySelectorAll('a[href^="#"]');
 
