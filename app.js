@@ -1,11 +1,16 @@
-// kids-social: erste JS-Zeile 😊
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('a[href^="#"]');
 
-const demoButton = document.getElementById("demoButton");
-const demoMessage = document.getElementById("demoMessage");
+  links.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      const targetId = link.getAttribute("href");
+      if (!targetId || targetId === "#") return;
 
-if (demoButton && demoMessage) {
-  demoButton.addEventListener("click", () => {
-    demoMessage.textContent =
-      "Hi! Hier wird später der sichere Bereich für Kids sein. 🔐";
+      const targetEl = document.querySelector(targetId);
+      if (!targetEl) return;
+
+      event.preventDefault();
+      targetEl.scrollIntoView({ behavior: "smooth" });
+    });
   });
-}
+});
